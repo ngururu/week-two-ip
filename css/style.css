@@ -1,9 +1,13 @@
 body {
     background-image: url(../Images/texture.jpeg); 
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 60%;
+    border: 2px solid green;
+    padding: 50px;
 }
 .Intro{
-    color: white;
+    color: cyan
 }
 .Gender{
     color: white;
