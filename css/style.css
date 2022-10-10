@@ -1,0 +1,17 @@
+body {
+    background-image: url(../Images/texture.jpeg); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Intro{
+    color: white;
+}
+.Gender{
+    color: white;
+    width: 200px;
+    float: left;
+    margin: 20px;
+    border: 100px cyan;
+    padding: 6px;
+    margin: 5px;
+    background-color: rgb(3, 38, 39);
+}
