@@ -19,3 +19,11 @@ body {
     margin: 5px;
     /* background-color: rgb(3, 38, 39); */
 }
+#akanName{
+    display: none
+}
+
+.name{
+    display: block;
+    color: white;
+}

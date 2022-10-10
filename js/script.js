@@ -25,5 +25,5 @@ var day = parseInt(prompt("What is your day of birth?"));
 var gender = prompt("Enter your gender (m/f)");
 var century = year.toString().substring(0,2);
 
-CalculateNameAndDay(century, year, month, day, gender);
+var output = CalculateNameAndDay(century, year, month, day, gender);
 }
