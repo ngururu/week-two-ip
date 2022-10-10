@@ -27,7 +27,7 @@ if (Gender === 'm') {
     return output;    
 }
 
-function(userInput) {
+function userInput() {
 var year = parseInt(prompt("What is your year of birth?"));
 var month = parseInt(prompt("Input the Month"));
 var day = parseInt(prompt("What is your day of birth?"));
