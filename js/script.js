@@ -7,9 +7,9 @@ var indexDayOfTheWeek = Math.round(( ( (century/4) -2*century-1) + ((5*year/4) )
 var dayOfBirth = Days_Of_The_Week[indexDayOfTheWeek];
 
 var name = null;
-if (Gender === 'm') {
+if (gender === 'm') {
   name = Male_Names[indexDayOfTheWeek];
-}else if (Gender === 'f') {
+}else if (gender === 'f') {
   name = Female_Names[indexDayOfTheWeek];
 }else{
   alert("Input correct Gender");
@@ -25,5 +25,9 @@ var day = parseInt(prompt("What is your day of birth?"));
 var gender = prompt("Enter your gender (m/f)");
 var century = year.toString().substring(0,2);
 
-var output = CalculateNameAndDay(century, year, month, day, gender);
+var userDetails = CalculateNameAndDay(century, year, month, day, gender);
+
+var userDetailsElement = document.getElementById("akanName");
+userDetailsElement.innerHTML = "You were born on: " + userDetails[0] + " your Akan name is: " + userDetails[1];
+
 }
