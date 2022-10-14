@@ -1,5 +1,5 @@
-body {
-    background-image: url(../Images/texture.jpeg); 
+/* body {
+    /* background-image: url(../Images/texture.jpeg);  */
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:auto;
     width: 60%;
@@ -8,9 +8,9 @@ body {
 }
 .Intro{
     color: cyan
-}
+} */
 .Gender{
-    color: white;
+    color: black;
     width: 200px;
     float: left;
     margin: 20px;
@@ -25,5 +25,4 @@ body {
 
 .name{
     display: block;
-    color: white;
-}
+   }

@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghanian Akan Name</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div class="container">
     <h3 class="Intro">Ghanian Akan Name</h3>
-    <div class="Intro">
+    <div class="jumbotron">
         <h4>Application to display Akan Name</h4>
         <p>Akan names are derived from Ghanian culture. In Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
-        <button onclick="userInput()">Click here!</button>
-    </div>
+      </div>
 
-    <div class="Gender">
-        <h4>Male Names</h4>
+    <div class="card">
+        <h4 class="bg-primary">Male Names</h4>
         <ul>
             <li>Sunday: Kwasi</li>
             <li>Monday: Kwadwo</li>
@@ -28,8 +28,8 @@
             <li>Saturday: Kwame</li>
         </ul>
     </div>
-    <div class="Gender">
-        <h4>Female Names</h4>
+    <div class="card">
+        <h4 class="bg-primary">Female Names</h4>
         <ul>
             <li>Sunday: Akosua</li>
             <li>Monday: Adwoa</li>
@@ -40,6 +40,7 @@
             <li>Saturday: Ama</li>
         </ul>
     </div>
+    <button onclick="userInput()">Click here!</button>
 
     <!-- <form>    
         <label> Firstname </label>           
@@ -50,5 +51,6 @@
 
         <p id="akanName" class="name">Your Akan name is:</p>
     <script src="js/script.js"></script>
+    </div>
 </body>
 </html>
