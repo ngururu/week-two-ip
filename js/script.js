@@ -65,7 +65,7 @@ switch(type){
     // }
     // break;
     default:
-      console.log();
+      // console.log();
 }
 
 }
