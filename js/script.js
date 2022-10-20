@@ -31,3 +31,11 @@ var userDetailsElement = document.getElementById("akanName");
 userDetailsElement.innerHTML = "You were born on: " + userDetails[0] + " your Akan name is: " + userDetails[1];
 
 }
+
+function validator(value, type){
+switch(type){
+  case "y":
+    if (value > 2022 || value < 1900)
+}
+
+}
