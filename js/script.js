@@ -9,9 +9,13 @@ var dayOfBirth = Days_Of_The_Week[indexDayOfTheWeek];
 var name = null;
 if (gender === 'm') {
   name = Male_Names[indexDayOfTheWeek];
+// }else {
+//   name = Female_Names[indexDayOfTheWeek];
+// }
 }else if (gender === 'f') {
   name = Female_Names[indexDayOfTheWeek];
-}else{
+}
+else{
   alert("Input correct Gender");
 }
     var output = [dayOfBirth, name];
@@ -19,10 +23,16 @@ if (gender === 'm') {
 }
 
 function userInput() {
-var year = validator(parseInt(prompt("What is your year of birth?")), "Y");
-var month = validator(parseInt(prompt("Input the Month")), "M");
-var day = validator(parseInt(prompt("What is your day of birth?")), "D");
-var gender = validator(prompt("Enter your gender (m/f)"), "G");
+// var year = validator(parseInt(prompt("What is your year of birth?")), "Y");
+// var month = validator(parseInt(prompt("Input the Month")), "M");
+// var day = validator(parseInt(prompt("What is your day of birth?")), "D");
+// var gender = prompt("Enter your gender (m/f)");
+
+var year = parseInt(prompt("What is your year of birth?"));
+var month = parseInt(prompt("Input the Month"));
+var day = parseInt(prompt("What is your day of birth?"));
+var gender = prompt("Enter your gender (m/f)");
+
 var century = year.toString().substring(0,2);
 
 var userDetails = CalculateNameAndDay(century, year, month, day, gender);
@@ -49,11 +59,11 @@ switch(type){
       alert("Invalid day");
     }
     break;
-    case "G":
-    if (value !== "m" || value !== "f"){
-      alert("Invalid gender");
-    }
-    break;
+    // case "G":
+    // if (value !== "f" || value !== "m"){
+    //   alert("Invalid gender");
+    // }
+    // break;
     default:
       console.log();
 }
