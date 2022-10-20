@@ -19,10 +19,10 @@ if (gender === 'm') {
 }
 
 function userInput() {
-var year = parseInt(prompt("What is your year of birth?"));
-var month = parseInt(prompt("Input the Month"));
-var day = parseInt(prompt("What is your day of birth?"));
-var gender = prompt("Enter your gender (m/f)");
+var year = validator(parseInt(prompt("What is your year of birth?")) "y");
+var month = validator(parseInt(prompt("Input the Month")) "m");
+var day = validator(parseInt(prompt("What is your day of birth?")) "d");
+var gender = validator(prompt("Enter your gender (m/f)") "g")
 var century = year.toString().substring(0,2);
 
 var userDetails = CalculateNameAndDay(century, year, month, day, gender);
@@ -34,8 +34,28 @@ userDetailsElement.innerHTML = "You were born on: " + userDetails[0] + " your Ak
 
 function validator(value, type){
 switch(type){
-  case "y":
-    if (value > 2022 || value < 1900)
+    case "y":
+    if (value > 2022 || value < 1900){
+      alert(Invalid year);
+    }
+    break;
+    case "m":
+    if (value > 12 || value <= 0){
+      alert(Invalid month);
+    }
+    break;
+    case "d":
+    if (value > 31 || value <= 0){
+      alert(Invalid day);
+    }
+    break;
+    case "g":
+    if (value !== "m" || value !== "f"){
+      alert(Invalid gender);
+    }
+    break;
+    default:
+      console.log();
 }
 
 }
