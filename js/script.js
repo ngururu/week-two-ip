@@ -25,11 +25,11 @@ else{
 }
 
 // function for user input
-function userInput() {
-var year = validator(parseInt(prompt("What is your year of birth?")), "Y");
-var month = validator(parseInt(prompt("Input the Month")), "M");
-var day = validator(parseInt(prompt("What is your day of birth?")), "D");
-var gender = prompt("Enter your gender ('m' or 'f')");
+function userInput(){
+var year = checkIfValid(parseInt(prompt("What is your year of birth?")), "Y");
+var month = checkIfValid(parseInt(prompt("Input the Month")), "M");
+var day = checkIfValid(parseInt(prompt("What is your day of birth?")), "D");
+var gender = checkIfValid(prompt("Enter your gender ('m' or 'f')"));
 
 // var year = parseInt(prompt("What is your year of birth?"));
 // var month = parseInt(prompt("Input the Month"));
@@ -45,7 +45,7 @@ userDetailsElement.innerHTML = "You were born on: " + userDetails[0] + " your Ak
 
 }
 
-function validator(value, type){
+function checkIfValid(value, type){
 switch(type){
     case "Y":
     if (value > 2022 || value < 1900){
@@ -67,7 +67,7 @@ switch(type){
     //   alert("Invalid gender");
     // }
     // break;
-    default:
+    // default:
       // console.log();
 }
 

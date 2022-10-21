@@ -14,6 +14,9 @@ run with live server
 Live Link https://ngururu.github.io/week-two-ip
 
 ## BDD 
+- User clicks a button to start a prompt for user input.
+- User enters year of birth, month, day and gender through a prompt.
+- After the gender input a message is displayed with the Akan name and day of the week.
          
 ## Technologies used
 - HTML
