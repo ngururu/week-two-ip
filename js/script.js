@@ -11,9 +11,6 @@ var dayOfBirth = Days_Of_The_Week[indexDayOfTheWeek];
 var name = null;
 if (gender === 'm') {
   name = Male_Names[indexDayOfTheWeek];
-// }else {
-//   name = Female_Names[indexDayOfTheWeek];
-// }
 }else if (gender === 'f') {
   name = Female_Names[indexDayOfTheWeek];
 }
@@ -26,15 +23,15 @@ else{
 
 // function for user input
 function userInput(){
-var year = checkIfValid(parseInt(prompt("What is your year of birth?")), "Y");
-var month = checkIfValid(parseInt(prompt("Input the Month")), "M");
-var day = checkIfValid(parseInt(prompt("What is your day of birth?")), "D");
-var gender = checkIfValid(prompt("Enter your gender ('m' or 'f')"));
+// var year = checkIfValid(parseInt(prompt("What is your year of birth?")), 'Y');
+// var month = checkIfValid(parseInt(prompt("Input the Month")), 'M');
+// var day = checkIfValid(parseInt(prompt("What is your day of birth?")), 'D');
+// var gender = prompt("Enter your gender ('m' or 'f')");
 
-// var year = parseInt(prompt("What is your year of birth?"));
-// var month = parseInt(prompt("Input the Month"));
-// var day = parseInt(prompt("What is your day of birth?"));
-// var gender = prompt("Enter your gender (m/f)");
+var year = parseInt(prompt("What is your year of birth?"));
+var month = parseInt(prompt("Input the Month"));
+var day = parseInt(prompt("What is your day of birth?"));
+var gender = prompt("Enter your gender (m/f)");
 
 var century = year.toString().substring(0,2);
 
